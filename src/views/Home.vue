@@ -20,7 +20,7 @@ export default {
     };
   },
   mounted: function() {
-    mapboxgl.accessToken = "<your-access-token>";
+    mapboxgl.accessToken = process.env.VUE_APP_MAPBOX_ACCESS_TOKEN;
     const map = new mapboxgl.Map({
       container: "map",
       style: "mapbox://styles/mapbox/streets-v11", // stylesheet location
